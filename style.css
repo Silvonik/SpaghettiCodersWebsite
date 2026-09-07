@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Phantom Sans';
+  src:
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+      format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src:
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: #ffff;
+  color: #ff8c37;
+  font-family: 'Phantom Sans';
+  font-size: 25px;
+  text-align: center; 
+}
+
+.Header{
+  width: 100%;
+  color: #ffff;
+  padding: 150px 0 150px 0;
+  position: relative;
+  min-height: 800px;
+  height: fit-content;
+  background-image: url("Images/HeaderBG.png");
+  background-size: cover;
+  background-position:center ;
+  background-repeat: no-repeat;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Icon{
+  margin-top: -350px;
+  max-width: 850px;
+  width: 50%;
+  margin-bottom: -20px;
+  min-width: 250px;
+}
+.Header h1{
+  font-size: 100px;
+}
+.Header p{
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.Header button{
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #ffff;
+  border-width: 0;
+  padding: 15px 30px 15px 20px;
+  margin: 10px 40px 10px 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ff8c37;
+  font-weight: bold;
+  transition: .5s;
+}
+#seeMess:hover{
+  cursor: pointer;
+  transform: rotate(-360deg);
+}
+@media (max-width: 800px) {
+  .Header{
+    background-size: auto;
+    padding: 250px 0 0 0;
+    min-height: 400px;
+  }
+  .Icon{
+    margin-top: -400px;
+  }
+  .Header p{
+    margin-top: 35px;
+    font-size: 17px;
+  }
+  .Header Button{
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+
+#mess{
+  margin-top: 100px;
+}
+
+
