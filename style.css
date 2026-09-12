@@ -26,6 +26,12 @@ html{
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
 body{
   margin: 0;
   background-color: #ffff;
@@ -87,22 +93,59 @@ section{
   transform: translateY(-5px);
 }
 
+@media (min-width: 801px) and (max-width: 1100px),
+       (min-width: 801px) and (max-height: 800px) {
+  .Header{
+    min-height: 700px;
+    padding: 48px 24px 110px;
+    justify-content: flex-start;
+  }
+
+  .Icon{
+    width: min(42%, 500px);
+    min-width: 220px;
+    margin: 0 auto 16px;
+  }
+
+  .Header h1{
+    font-size: clamp(64px, 8vw, 84px);
+    margin: 20px 0;
+  }
+
+  .Header p{
+    max-width: 760px;
+    font-size: 26px;
+    margin: 0 20px;
+  }
+
+  .Header button{
+    font-size: 24px;
+    padding: 12px 24px;
+    margin: 20px 0 0;
+  }
+}
+
 @media (max-width: 800px) {
   .Header{
     background-size: auto;
-    padding: 250px 0 0 0;
-    min-height: 400px;
-    
+    padding: 40px 20px 90px;
+    min-height: 560px;
+    justify-content: flex-start;
   }
+
   .Icon{
-    margin-top: -400px;
+    width: min(85vw, 500px);
+    min-width: 0;
+    margin: 0 auto 20px;
   }
+
   .Header p{
-    margin-top: 35px;
+    margin: 0 12px;
     font-size: 17px;
   }
+
   .Header Button{
-    margin-top: 35px;
+    margin: 24px 0 0;
     font-size: 15px;
   }
 }
