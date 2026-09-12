@@ -60,7 +60,7 @@ section{
   align-items: center;
 }
 .Icon{
-  margin-top: -350px;
+  margin-top: 0;
   max-width: 850px;
   width: 50%;
   margin-bottom: -20px;
