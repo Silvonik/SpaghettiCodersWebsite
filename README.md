@@ -1,0 +1,3 @@
+# Spaghetti Coders Website
+
+## About
