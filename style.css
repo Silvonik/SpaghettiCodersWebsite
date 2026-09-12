@@ -34,7 +34,9 @@ body{
   font-size: 25px;
   text-align: center; 
 }
-
+section{
+  padding: 95px 40px;
+}
 .Header{
   width: 100%;
   color: #ffff;
@@ -56,7 +58,7 @@ body{
   max-width: 850px;
   width: 50%;
   margin-bottom: -20px;
-  min-width: 250px;
+  min-width: 300px;
 }
 .Header h1{
   font-size: 100px;
@@ -68,7 +70,7 @@ body{
   margin-right: 20px;
 }
 .Header button{
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 20px;
   background-color: #ffff;
   border-width: 0;
@@ -78,17 +80,19 @@ body{
   font-size: 30px;
   color: #ff8c37;
   font-weight: bold;
-  transition: .5s;
+  transition: 0.25s;
 }
 #seeMess:hover{
   cursor: pointer;
-  transform: rotate(-360deg);
+  transform: translateY(-5px);
 }
+
 @media (max-width: 800px) {
   .Header{
     background-size: auto;
     padding: 250px 0 0 0;
     min-height: 400px;
+    
   }
   .Icon{
     margin-top: -400px;
@@ -98,13 +102,20 @@ body{
     font-size: 17px;
   }
   .Header Button{
-    margin-top: 20px;
+    margin-top: 35px;
     font-size: 15px;
   }
 }
 
-#mess{
-  margin-top: 100px;
+#mess {
+  margin-top: -200px;
+  padding-top: 50px; 
+  padding-bottom: 95px; 
+}
+@media (max-width: 800px) {
+  #mess{
+    margin-top: 0;
+  }
 }
 
 
