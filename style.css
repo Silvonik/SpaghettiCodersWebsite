@@ -191,6 +191,7 @@ body{
 }
 
 section{
+  scroll-margin-top: 100px;
   padding: 15px;
   width: 750px;
   margin: 50px 0 50px 0;
