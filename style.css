@@ -119,19 +119,20 @@ body{
 .Header button{
   margin-top: 20px;
   border-radius: 20px;
-  background-color: #ffff;
-  border-width: 0;
+  background-color: #ffffff00;
+  border: 3px solid #ffffff;
   padding: 15px 20px 15px 20px;
   margin: 10px 40px 10px 40px;
   text-align: center;
   font-size: 30px;
-  color: #f8781d;
+  color: #ffffff;
   font-weight: bold;
   transition: 0.25s;
 }
 #seeMess:hover{
   cursor: pointer;
-  transform: translateY(5px);
+  color: #f8781d;
+  background-color: #ffffff;
 }
 
 @media (min-width: 801px) and (max-width: 1100px),
@@ -207,6 +208,7 @@ section p{
   color: #171717;
   margin-left: 40px;
   margin-right: 40px;
+  
 }
 section h1{
   font-size: 60px;
@@ -249,6 +251,14 @@ section h1{
 #support{
   margin-right: 7%;
   margin-left: auto;
+
+}
+.textboxrow{
+  display: flex;
+  flex-direction: row;
+}
+.textboxrow p{
+  width: 50%;
 }
 
 @media (max-width: 800px) {
@@ -257,6 +267,15 @@ section h1{
     margin: 50px auto !important;
     padding: 25px 20px;
   }
+
+  .textboxrow{
+    flex-direction: column;
+    align-items: center;
+  }
+  .textboxrow p{
+    width: 100%;
+  }
+
 }
 
 #donate{
