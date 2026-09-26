@@ -62,7 +62,7 @@ body{
   left: 0;
   bottom: 0;
   width: 100%;
-  aspect-ratio: 1080/564;
+  aspect-ratio: 2160/1128;
   background-color: #ffffff;
   background-image: url("Images/FooterBG.png");
   background-size: 100% 100%;
@@ -286,6 +286,23 @@ section h1{
 
 }
 
+#FAQ p{
+  margin-bottom: 10px;
+}
+#FAQ details{
+  text-align: left;
+  width: 100%;
+  margin: 8px 0;
+}
+#FAQ summary{
+  cursor: pointer;
+  font-weight: bold;
+  padding: 6px 0;
+}
+#FAQ details p{
+  margin: 6px 20px 14px;
+}
+
 #donate{
   text-decoration: none;
   margin-top: 20px;
@@ -301,6 +318,43 @@ section h1{
   transition: 0.25s;
 }
 
+#contactbutton{
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #f8781d00;
+  padding: 15px 20px 15px 20px;
+  margin: 0px 40px 0px 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #f8781d;
+  border: 3px solid #f8781d;
+  font-weight: bold;
+  transition: .25s;
+}
+#contactbutton:hover{
+  background-color: #f8781d;
+  color: #ffffff;
+}
+
+#linksjoin{
+  display: flex;
+  flex-direction: row;
+
+  gap: 20px;
+}
+#linksjoin a{
+  text-decoration: none;
+  background-color: #f8781d;
+  color: #ffff;
+  border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+  margin: 0px 0px 0px 0px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
 @media (min-width: 801px) and (max-width: 1100px),
        (min-width: 801px) and (max-height: 800px) {
 
@@ -308,6 +362,17 @@ section h1{
     font-size: 24px;
     padding: 12px 24px;
     margin: 0px 0 20px ;
+  }
+
+  #contactbutton{
+    font-size: 24px;
+    padding: 12px 24px;
+    margin: 0px 0 20px;
+  }
+  #linksjoin a{
+    font-size: 24px;
+    padding: 12px 24px;
+    margin: 0px 0 20px;
   }
 }
 
@@ -317,9 +382,52 @@ section h1{
     margin: 5px 0 0;
     font-size: 15px;
   }
+  #contactbutton{
+    margin: 5px 0 0;
+    font-size: 15px;
+  }
+  .email{
+    font-size: 16px;
+  }
+  #linksjoin a{
+    font-size: 15px;
+    margin: 5px 0 0;
+  }
 }
+
+
 
 #dino{
   margin-top: 15px;
   width: 150px;
+}
+
+.MeetingInfo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0 25px;
+}
+.InfoPill{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  border: 2px solid #f8781d;
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f8781d;
+}
+.InfoIcon{
+  font-size: 22px;
+}
+
+@media (max-width: 800px){
+  .InfoPill{
+    font-size: 15px;
+    padding: 8px 16px;
+  }
 }
