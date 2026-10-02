@@ -179,20 +179,26 @@ body{
   margin-left: 20px;
   margin-right: 20px;
 }
-.Header button{
+.headbuttons{
+  display: flex;
+  flex-direction: row;
+}
+.Header button, .Header a{
+  font-family: 'Phantom Sans';
+  text-decoration: none;
   margin-top: 20px;
   border-radius: 20px;
   background-color: #ffffff00;
   border: 3px solid #ffffff;
   padding: 15px 20px 15px 20px;
-  margin: 10px 40px 10px 40px;
+  margin: 10px 10px 10px 10px;
   text-align: center;
   font-size: 30px;
   color: #ffffff;
   font-weight: bold;
   transition: 0.25s;
 }
-#seeMess:hover{
+.Header button:hover, .Header a:hover{
   cursor: pointer;
   color: #f8781d;
   background-color: #ffffff;
@@ -223,11 +229,15 @@ body{
     margin: 0 20px;
   }
 
-  .Header button{
+  .Header button, .Header a{
     font-size: 24px;
     padding: 12px 24px;
     margin: 20px 0 0;
 
+  }
+
+  .headbuttons{
+    flex-direction: row;
   }
 }
 
@@ -245,14 +255,24 @@ body{
   }
 
   .Header p{
-    margin: 0 12px;
+    margin: 10px 12px;
+    margin-bottom: 10px;
     font-size: 17px;
   }
 
-  .Header Button{
-    margin: 24px 0 0;
+  .Header Button, .Header a{
+    margin: 27px 0 0;
     font-size: 15px;
     border: 2px solid #ffffff;
+  }
+
+  .headbuttons{
+    flex-direction: row;
+  }
+}
+@media (max-width: 310px){
+  .Header p{
+    margin-bottom: 30px;
   }
 }
 
