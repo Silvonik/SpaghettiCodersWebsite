@@ -1,4 +1,5 @@
 # SpaghettiCoders.club
+![Thumbnail](https://github.com/Silvonik/SpaghettiCodersWebsite/blob/main/Assets/Thumbnail.png)
 My Clubs Website. Try it out! <a href="https://silvonik.github.io/SpaghettiCodersWebsite/">Website</a>
 
 ## About
