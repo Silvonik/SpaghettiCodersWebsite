@@ -612,3 +612,32 @@ section h1{
     }
 }
 
+.entireProjects{
+  background-color: #f7ede1;
+  width: 100%;
+  height: 100%;
+}
+#projectHead{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-right: 150px;
+}
+#projectsTitle{
+  text-decoration:underline wavy #f8781d;
+}
+#goBack{
+  background-color: white;
+  text-decoration: none;
+  color: #f8781d;
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+#goBack:hover{
+  background-color: #f8781d;
+  color: #ffff;
+}
